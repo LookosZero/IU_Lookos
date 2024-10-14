@@ -1,0 +1,60 @@
+---------------Lo que hay que hacer----------------------
+
+0. Descargar el ET2_Base del moovi
+	0.1 Crear en js_test el ET2_NombreApellidos.js con la linea:
+		datosgenerales_LucasMartinCaridad = Array('Martin Caridad Lucas','ET2','17');
+	0.2 Crear en js_test los archivos ET2_NombreApellidos_pruebas.js y ET2_NombreApellidos_tests.js (esto mas adelante es parecido a la ET1)
+	0.3 Crear en js_base archivo Validaciones_Atomicas.js
+
+1. Cambiar el gestion_persona.html por los de gestion_programa.html con todos los atributos
+	1.1 El HTML va en el js en recargarform()
+
+2. Cambiar gestion persona por gestion programa
+3. Cambiar los createForm por los de Gestion_programa (ADD, EDIT, DELETE, SHOWCURRENT y SEARCH)
+4. Cambiar las funciones comprobar_submit() y comprobar_submitSEARCH() por las funciones nuevas de comprobar programa (Los atributos y todo lo de programa)
+5. Hacer las validaciones de los campos
+    5.1 Crear metodos en Validaciones_Atomicas.js esVacio(id), size_minimo(id,min) y  size_maximo(id,max) [ESTO TODAVIA NO SE COMO VA]
+    5.2 Hacer los comprobar_atributos y comprobar_atributos_SEARCH()
+6. Ir haciendo lo de textos_ES con todos los textos en español de los atributos, las acciones y los mensajes de error
+
+
+7. Repetir amargamente todo lo de gestion_programa (punto 1. al punto 6.) pero con gestion_publicacion
+
+8. Arreglar los errores con el inspeccionar del navegador hasta que funcione
+
+9. Rellenar los ficheros ET2_NombreApellidos_pruebas.js y ET2_NombreApellidos_tests.js (es parecido a la ET1)
+
+
+----------------Notitas---------------------------------
+
+cambiar gestion persona por gestion programa
+
+
+en el EDIT tambien con los atributos del programa
+
+id_programa en EDIT ponerlo en readonly
+set.atribute("readonly",true)
+
+DELETE lo mismo
+
+Gestion_entidad.ponercamposreadonly();
+
+
+---------------IMPORTANTE-------------------------------------
+Cambios ET2 respecto a la provisional:
+
+Poner async en los createForm_X()
+
+Descomentar los awaits y ponerlos en todos los createForm_X()
+
+Descomentar SetLang();
+
+Cambiar fichero_programa se hace igual que la imagen
+
+cambiar el html y poner los options en mayuscula
+
+poner el let para los botones (lo de la imagen de los botones)
+
+Ver como se comprueba el tamaño de los bytes del fichero_programa
+
+cambiar lo de validaciones atomicas (no se como es)

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<form>
+		<label for="dni">DNI:</label>
+		<input type="text" id="dni" name="dni"/><br>
+
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre"/><br>
+
+		<label for="passwd">Contraseña:</label>
+		<input type="passwd" id="passwd" name="passwd" size="20"/><br>
+
+		<label for="cuestionario">Cuestionario:</label><br>
+		<input type="checkbox" name="lenguaje" value="html"/>HTML
+		<input type="checkbox" name="lenguaje" value="javascript"/>javascript
+		<input type="checkbox" name="lenguaje" value="css"/>css
+		<input type="checkbox" name="lenguaje" value="xml"/>xml<br>
+
+		<label for="calidad">Calidad:</label><br>
+		<input type="radio" id="poco" value="poco" name="calidad"/>Poco
+		<input type="radio" id="normal" value="normal" name="calidad"/>Normal
+		<input type="radio" id="mucho" value="mucho" name="calidad"/>Mucho<br>
+
+		<label for="fichero">Fichero:<label></label><br>
+		<input type="file" id="fichero" name="fichero"/><br>
+
+		<input type="image" src="https://cdn2.excelsior.com.mx/media/pictures/2022/10/13/2839101.jpg" name="taqueriasgoku" alt="taqueriasgoku" width="300" height="300"/><br>
+
+		<label for="texto">Texto:</label><br>
+		<textarea rows="20" cols="40" name="texto"></textarea><br>
+
+		<label for="ciudad">Ciudad:</label><br>
+		<select name="ciudad">
+				<option selected="selected">Selecciona</option>
+			<optgroup label="Europa"/>
+				<option>Madrid</option>
+				<option>Paris</option>
+				<option>Ferrol</option>
+			<optgroup label="Asia"/>
+				<option>Ulan Bator</option>
+				<option>Hanoi</option>
+				<option>Vladivostok</option>
+		</select><br>
+
+		<label for="Botoncito">Boton:</label><br>
+		<input type="button" value="Botoncito"><br><br>
+
+		<input type="submit" value="Enviar"/>
+		<input type="reset" value="Reset"/>
+
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+En el archivo html tienes que poner:
+<script type="text/javascript" src="./js/archivo.js"></script>
+Importante poner el . en el source pq asi mira en el mismo archivo
+Normalmente se hace una carpeta js para poner ahi todos los archivos .js
+Para llamar por ejemplo onclick="funcionjs()"
+
+
+= asignacion
+== Comparacion de valor
+=== comparacion que sea mismo valor y mismo tipo
+
+
+en html onblur es para salir del foco (no funciona para el file)
+
+
+conversion de tipos
+toString String()
+toNumber Number()
+toBoolean Boolean() Nota: string que tiene un 0 es un true
+

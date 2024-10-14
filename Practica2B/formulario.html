@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+	<script type="text/javascript" src="./js/validacion.js"></script>
+</head>
+<body>
+	<h1>Login</h1>
+	<form>
+		<label for="nombre">Nombre:</label>	
+		<input type="text" id="nombre" name="nombre" onblur="validarNombre()"/>
+		<span id="errorNombre" style="color:red"></span><br>
+
+		<label for="passwd">Contraseña:</label>
+		<input type="password" id="passwd" name="passwd" onblur="validarPasswd()"/>
+		<span id="errorPasswd" style="color:red"></span><br>
+
+
+		<label for="cuestionario">Cuestionario:</label><br>
+		<input type="checkbox" name="comida" value="tacos"/>Tacos
+		<input type="checkbox" name="comida" value="enchiladas"/>Enchiladas
+		<input type="checkbox" name="comida" value="alambres"/>Alambres
+		<input type="checkbox" name="comida" value="gringas"/>Gringas<br>
+
+		<label for="carne">Carne:</label><br>
+		<input type="radio" id="poco_hecho" value="poco_hecho" name="carne"/>Poco hecho
+		<input type="radio" id="al_punto" value="al_punto" name="carne"/>Al punto
+		<input type="radio" id="hecho" value="hecho" name="carne"/>Hecho<br>
+
+		<br>
+		<label for="fichero">Envia una foto de tu Especial Goku:<label></label><br>
+		<input type="file" id="fichero" name="fichero"onblur="validarImagen()"/><br>
+		<br>
+		<input type="image" src="./images/goku.jpg" name="taqueriasgoku" alt="taqueriasgoku" width="300" height="300"/><br>
+
+		<label for="texto">Describe los tacos:</label><br>
+		<textarea rows="20" cols="40" name="texto" onblur="validarTexto()"></textarea><br>
+
+		<label for="ciudad">Selecciona la procedencia del taco:</label><br>
+		<select name="ciudad">
+				<option selected="selected">Selecciona</option>
+			<optgroup label="Europa"/>
+				<option>Madrid</option>
+				<option>Paris</option>
+				<option>Ferrol</option>
+			<optgroup label="Asia"/>
+				<option>Ulan Bator</option>
+				<option>Hanoi</option>
+				<option>Vladivostok</option>
+		</select><br>
+
+		<label for="Goku">Especial Goku:</label><br>
+		<input type="button" value="Goku"><br><br>
+
+		<input type="submit" value="Enviar"/>
+		<input type="reset" value="Reset"/>
+	</form>
+
+	<div id="infoDiv" style="display: none">
+        <p id="infoMensaje"></p>
+        <button onclick="ocultarInfo()">Cerrar</button>
+    </div>
+
+
+</body>
+</html>

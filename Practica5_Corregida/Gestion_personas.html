@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practica 5</title>
+	<script type="text/javascript" src="./funcionesComunes.js"></script>
+	<script type="text/javascript" src="./Gestion_Entidad.js"></script>
+	<script type="text/javascript" src="./Gestion_personas.js"></script>
+	<script type="text/javascript" src="./funciones.js"></script>
+</head>
+<body onload="inicializa_pagina();personas = new Gestion_personas('personas',datospersonas,Array('dni','telefono_persona')); personas.mostrartabla();">
+	
+	<div id="div_titulo_pagina" class="formato_titulo_pagina">
+		<p id="id_texto_titulo_tabla" onclick="saludar();">pagina de prueba practica 5 iu</p>
+	</div>
+
+	<div id="div_mensajes_pagina" class="formato_mensajes_pagina">
+		<p id="texto_mensaje"></p>
+		<p onclick="cerrar_div_mensajes();">Cerrar</p>
+	</div>
+    
+	<div id="addysearch">
+		<button id="botonADD" onclick="Gestion_personas.createForm_ADD();">ADD</button>
+		<button id="botonSEARCH" onclick="Gestion_personas.createForm_SEARCH();">SEARCH</button>
+	</div>
+	
+	<div id="id_tabla_datos">
+        
+    </div>
+	
+	<div id='id_div_pruebaform'>
+		<div id="id_contenedor_imagen">
+			<!-- Aquí se mostrará la imagen -->
+		</div>
+
+		<form id='id_pruebaform' name='pruebaform' method='post'>
+		
+			<label class="dni">DNI</label>
+			<input type='text' id='id_dni' name='dni'></input>
+			<span id="dniError" style="color: red;"></span>
+			<br>
+			
+			<label class="nombre_persona">Nombre de pila</label>
+			<input type='text' id='id_nombre_persona' name='nombre_persona'></input>
+			<span id="nombreError" style="color: red;"></span>
+			<br>
+			
+			<label class="apellidos_persona">Apellidos</label>
+			<input type='text' id='id_apellidos_persona' name='apellidos_persona'></input>
+			<span id="apellidosError" style="color: red;"></span>
+			<br>
+			
+			<label class="fechaNacimiento_persona">Fecha de Nacimiento</label>
+			<input type='date' id='id_fechaNacimiento_persona' name='fechaNacimiento_persona'></input>
+			<span id="fechNacError" style="color: red;"></span>
+			
+			<br>
+			<label class="direccion_persona">Dirección Postal</label>
+			<input type='text' id='id_direccion_persona' name='direccion_persona'></input>
+			<span id="direccionError" style="color: red;"></span>
+			
+			<br>
+			<label class="telefono_persona">Teléfono Persona</label>
+			<input type='text' id='id_telefono_persona' name='telefono_persona'></input>
+			<span id="telefonoError" style="color: red;"></span>
+			
+			<br>
+			<label class="email_persona">Correo Electronico</label>
+			<input type='text' id='id_email_persona' name='email_persona'></input>
+			<span id="emailError" style="color: red;"></span>
+			
+			<br>
+			<label class="foto_persona"></label>
+			<input type='file' id='id_foto_persona' name='foto_persona'></input>
+			<span id="fotoError" style="color: red;"></span>
+
+			<br>
+			<input type="submit" id='id_submit' value="" />
+			
+			<br>
+			<button class="btnVolver titulo_volver" onclick="window.location.href = 'Gestion_personas.html';">Volver</button>
+			
+		</form>
+	</div>
+</body>
+</html>
